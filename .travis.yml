@@ -6,6 +6,7 @@ script:
   - npm install eslint
   - eslint *.js
   - npm install sass-lint --save-dev
+  - sass-lint *.scss
 
 notifications:
   email: false
