@@ -1,4 +1,8 @@
 language: node_js
 
+script:
+  - npm install eslint
+  - eslint *.js
+
 notifications:
   email: false
