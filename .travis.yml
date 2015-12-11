@@ -3,8 +3,15 @@ node_js:
   - "0.12"
 
 script:
+  - "test/travis.rb"
   - npm install eslint
   - eslint *.js
 
 notifications:
   email: false
+
+script:
+
+language: sass
+before_install:
+ - gem install sass
