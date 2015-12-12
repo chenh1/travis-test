@@ -8,7 +8,7 @@ script:
   - npm install eslint
   - eslint *.js
   - npm install sass-lint --save-dev
-  - "travis.rb"
+  - sass-lint
 
 notifications:
   email: false
