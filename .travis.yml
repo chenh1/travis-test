@@ -2,14 +2,14 @@ language: node_js
 node_js:
   - "0.12"
   
-before_install: gem install sass
-language: sass
+before_install: 
+  - gem install sass
+  - npm install gulp
+  - npm install gulp-scss-lint --save-dev
 
 script:
   - npm install eslint
   - eslint *.js
-  - npm install gulp
-  - npm install gulp-scss-lint --save-dev
   - gulp
   
 notifications:
