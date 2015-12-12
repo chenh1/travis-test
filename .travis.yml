@@ -8,6 +8,7 @@ script:
   - npm install eslint
   - eslint *.js
   - npm install sass-lint --save-dev
+  - 'sass-lint.yml'
 
 notifications:
   email: false
