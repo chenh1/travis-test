@@ -9,7 +9,6 @@ script:
   - npm install eslint
   - eslint *.js
   - npm install gulp
-  - npm install sass-lint --save-dev
   - npm install gulp-scss-lint --save-dev
   - gulp
   
