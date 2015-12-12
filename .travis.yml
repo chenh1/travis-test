@@ -4,13 +4,12 @@ node_js:
   
 before_install: 
   - gem install sass
-  - npm install gulp
-  - npm install gulp-scss-lint --save-dev
+  - gem install scss-lint 
 
 script:
   - npm install eslint
   - eslint *.js
-  - gulp
+  - scss-lint
   
 notifications:
   email: false
