@@ -3,10 +3,12 @@ node_js:
   - "0.12"
   
 before_install: gem install sass
+language: sass
 
 script:
   - npm install eslint
   - eslint *.js
+  - npm install gulp
   - npm install sass-lint --save-dev
   
 notifications:
