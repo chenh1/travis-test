@@ -1,15 +1,13 @@
 language: node_js
 node_js:
   - "0.12"
+  
+before_install: gem install sass
 
 script:
-  - "test/travis.rb"
   - npm install eslint
   - eslint *.js
+  - npm install sass-lint --save-dev
 
 notifications:
   email: false
-  
-language: sass
-before_install:
- - gem install sass
